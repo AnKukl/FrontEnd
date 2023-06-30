@@ -58,6 +58,8 @@
         margin-bottom: 10px;
         border-radius: 40px;
         padding: 10px 30px;
+        border-style: solid;
+        border-color: rgb(0, 0, 0) ;
       }
       button {
         box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -79,17 +81,31 @@
         font-size: larger;
       }
      
-      a{
-        
+      .reg{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #eceffd;
+        border-width: 2px;
+        border-radius: 5px ;
+        padding: 2px 10px;
         text-decoration: none;
-        margin: 0px 30px;
-        color: rgb(184, 130, 237);
+       
+        color: rgb(98, 98, 92);
         
     
       }
       form{
         margin-bottom: 60px;
       }
+      p{
+        
+        font-size: small;
+        
+      }
+      .problem{
+        text-decoration: none;
+        padding-left: 15px;
+      }
+     
     </style>
   </head>
   <body>
@@ -106,15 +122,20 @@
 
           <h5>Password</h5>
           <input type="password" placeholder="Введите ваш пароль" />
+          
            <p>
+            <p><input type="checkbox" class square ="checkbox">
+            Remember me
+            <a class="problem" href="">Forget password?</a>
+            </p>
             <button>
                 
                 Sign in 
               </button>
             </p>
-            <a href="">Registration</a>
+            <a class="reg" href="">Registration</a>
 
-            <a href="">Fortog password?</a>
+           
             
           
         </form>
