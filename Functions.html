@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function show_odd_numbers() {
+        for (let i = 0; i <= 10; i++) {
+          if (i % 2 == 1) {
+            console.log(i);
+          }
+        }
+      }
+      console.log(show_odd_numbers());
+
+      function sum_all_num(num1, num2) {
+        for (let i = num1 + 1; i <= num2; i++) {
+          num1 += i;
+        }
+        console.log(num1);
+      }
+      console.log(sum_all_num(4, 15));
+
+      let gamers = [
+        ["Igor", 50, 15],
+        ["Pavel228", 100, 23],
+        ["Monkeyguy", 47, 30],
+      ];
+      console.log(gamers[0][2]);
+
+      function give_array_average(arr) {
+        let s = 0;
+        for (i = 0; i < arr.length; i++) {
+          s += arr[i];
+        }
+        return s / arr.length;
+      }
+      console.log(give_array_average([31, 56, 74, 1780]));
+
+      function convert_degrees(Celsius) {
+        return Celsius * 1.8 + 32;
+      }
+      console.log(convert_degrees(98));
+    </script>
+  </head>
+  <body></body>
+</html>
